@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hobby Drones</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+    header {
+      background-color: #0b0f29;
+      color: #fff;
+      padding: 20px 0;
+      font-family: 'Orbitron', sans-serif;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    header h1 {
+      font-size: 2.2rem;
+    }
+
+    .banner-topo img {
+      width: 100%;
+      max-height: 450px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .servicos {
+      background-color: #fff;
+      padding: 50px 0;
+    }
+    .servicos h3 {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 35px;
+      color: #0b0f29;
+      font-family: 'Orbitron', sans-serif;
+    }
+    .lista-servicos {
+      max-width: 850px;
+      margin: auto;
+      list-style: none;
+      font-size: 1.1rem;
+    }
+    .lista-servicos li {
+      padding: 18px 25px;
+      border-radius: 10px;
+      margin-bottom: 18px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      border-left: 6px solid #ff8c42;
+      transition: transform 0.3s ease;
+    }
+    .lista-servicos li:hover {
+      transform: translateX(6px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    }
+    .lista-servicos li:nth-child(3n+1) {
+      background-color: #e6f2ff;
+    }
+    .lista-servicos li:nth-child(3n+2) {
+      background-color: #e8ffe6;
+    }
+    .lista-servicos li:nth-child(3n+3) {
+      background-color: #fff4e6;
+    }
+    .lista-servicos li::before {
+      content: '✓';
+      margin-right: 12px;
+      color: #0b0f29;
+      font-weight: bold;
+    }
+    .cta {
+      background-color: #0b0f29;
+      color: #fff;
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .cta h3 {
+      margin-bottom: 25px;
+      font-size: 1.9rem;
+      font-family: 'Orbitron', sans-serif;
+    }
+    .cta p {
+      max-width: 750px;
+      margin: auto;
+      font-size: 1.15rem;
+      line-height: 1.6;
+    }
+
+    .depoimentos {
+      background-color: #f9f9f9;
+      padding: 60px 20px;
+    }
+    .depoimentos h3 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 40px;
+      font-family: 'Orbitron', sans-serif;
+      color: #0b0f29;
+    }
+    .depoimentos .blocos {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .depoimentos .blocos div {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .depoimentos .blocos div strong {
+      display: block;
+      margin-top: 10px;
+    }
+
+    .imagem-complementar img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+      display: block;
+    }
+
+    .info-extra {
+      background-color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .info-extra h3 {
+      font-size: 2rem;
+      color: #0b0f29;
+      font-family: 'Orbitron', sans-serif;
+      margin-bottom: 25px;
+    }
+    .info-extra p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.15rem;
+      line-height: 1.8;
+    }
+
+    footer {
+      background-color: #222;
+      color: #ccc;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      padding: 12px 15px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: background 0.3s ease;
+      z-index: 999;
+    }
+    .whatsapp-btn:hover {
+      background-color: #1ebd5a;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Hobby Drones</h1>
+    </div>
+  </header>
+
+  <!-- Banner de Topo -->
+  <section class="banner-topo">
+    <img src="Banner.png" alt="Banner de Drones" />
+  </section>
+
+  <!-- Seção de Serviços -->
+  <section class="servicos">
+    <div class="container">
+      <h3>Serviços</h3>
+      <ul class="lista-servicos">
+        <li>Remoção de peças danificadas</li>
+        <li>Ajuste e calibração de drones</li>
+        <li>Manutenção especializada em drones DJI</li>
+        <li>Atualização de firmware</li>
+        <li>Consultoria para compra e uso de drones</li>
+        <li>Reparo de câmeras aéreas</li>
+        <li>Treinamento para pilotagem e segurança</li>
+        <li>Assistência técnica para drones agrícolas</li>
+        <li>Suporte em aplicações agrícolas e mapeamento aéreo</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Texto Institucional -->
+  <section class="cta">
+    <div class="container">
+      <h3>Especialistas em Drones Profissionais e Agrícolas</h3>
+      <p>
+        Com anos de experiência no setor, oferecemos soluções completas em manutenção, suporte técnico e otimização de drones. Seja para lazer, imagem aérea ou uso agrícola, garantimos qualidade, segurança e tecnologia de ponta. Confie em quem entende do assunto para manter seu equipamento sempre no ar.
+      </p>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section class="depoimentos">
+    <div class="container">
+      <h3>O que nossos clientes dizem</h3>
+      <div class="blocos">
+        <div>
+          <p>"O atendimento foi rápido e eficiente. Meu drone voltou a voar como novo!"</p>
+          <strong>— Lucas Martins, fotógrafo aéreo</strong>
+        </div>
+        <div>
+          <p>"Recomendo demais! Fiz manutenção preventiva e ainda ganhei dicas de uso agrícola."</p>
+          <strong>— Joana Ferreira, produtora rural</strong>
+        </div>
+        <div>
+          <p>"Excelentes profissionais. Ajudaram a configurar meu drone novo e explicar tudo com paciência."</p>
+          <strong>— Ricardo Oliveira, iniciante em drones</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Imagem Complementar -->
+  <section class="imagem-complementar" style="padding: 40px 0;">
+    <div class="container">
+      <img src="agri5.jpg" alt="Drone em operação" />
+    </div>
+  </section>
+
+  <!-- Informações Extras -->
+  <section class="info-extra">
+    <div class="container">
+      <h3>Atendimento completo para empresas e pessoas físicas</h3>
+      <p>
+        Atendemos tanto empresas quanto clientes individuais com soluções personalizadas. Fornecemos drones profissionais e agrícolas, oferecemos serviço de aluguel de drones para empresas, além de realizarmos coberturas com imagens aéreas em eventos como casamentos, aniversários e festas corporativas. Seja qual for sua necessidade, conte com a Hobby Drones para entregar qualidade e inovação em cada voo.
+      </p>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2017 Hobby Drones — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Botão WhatsApp -->
+  <a class="whatsapp-btn" href="https://wa.me/5511920572618" target="_blank">
+    Fale Conosco
+  </a>
+</body>
+</html>
