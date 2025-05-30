@@ -39,6 +39,24 @@
       display: block;
     }
 
+    .info-extra {
+      background-color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .info-extra h3 {
+      font-size: 2rem;
+      color: #0b0f29;
+      font-family: 'Orbitron', sans-serif;
+      margin-bottom: 25px;
+    }
+    .info-extra p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.15rem;
+      line-height: 1.8;
+    }
+
     .servicos {
       background-color: #fff;
       padding: 50px 0;
@@ -83,6 +101,7 @@
       color: #0b0f29;
       font-weight: bold;
     }
+
     .cta {
       background-color: #0b0f29;
       color: #fff;
@@ -99,6 +118,16 @@
       margin: auto;
       font-size: 1.15rem;
       line-height: 1.6;
+    }
+
+    .imagem-complementar img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+      display: block;
     }
 
     .depoimentos {
@@ -128,34 +157,6 @@
     .depoimentos .blocos div strong {
       display: block;
       margin-top: 10px;
-    }
-
-    .imagem-complementar img {
-      width: 100%;
-      max-width: 100%;
-      height: auto;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-      display: block;
-    }
-
-    .info-extra {
-      background-color: #fff;
-      padding: 60px 20px;
-      text-align: center;
-    }
-    .info-extra h3 {
-      font-size: 2rem;
-      color: #0b0f29;
-      font-family: 'Orbitron', sans-serif;
-      margin-bottom: 25px;
-    }
-    .info-extra p {
-      max-width: 800px;
-      margin: auto;
-      font-size: 1.15rem;
-      line-height: 1.8;
     }
 
     footer {
@@ -197,6 +198,16 @@
     <img src="Banner.png" alt="Banner de Drones" />
   </section>
 
+  <!-- Informações Extras (movida para cima) -->
+  <section class="info-extra">
+    <div class="container">
+      <h3>Atendimento completo para empresas e pessoas físicas</h3>
+      <p>
+        Atendemos tanto empresas quanto clientes individuais com soluções personalizadas. Fornecemos drones profissionais e agrícolas, oferecemos serviço de aluguel de drones para empresas, além de realizarmos coberturas com imagens aéreas em eventos como casamentos, aniversários e festas corporativas. Seja qual for sua necessidade, conte com a Hobby Drones para entregar qualidade e inovação em cada voo.
+      </p>
+    </div>
+  </section>
+
   <!-- Seção de Serviços -->
   <section class="servicos">
     <div class="container">
@@ -225,7 +236,14 @@
     </div>
   </section>
 
-  <!-- Depoimentos -->
+  <!-- Imagem Complementar -->
+  <section class="imagem-complementar" style="padding: 40px 0;">
+    <div class="container">
+      <img src="agri5.jpg" alt="Drone em operação" />
+    </div>
+  </section>
+
+  <!-- Depoimentos (movido para o final) -->
   <section class="depoimentos">
     <div class="container">
       <h3>O que nossos clientes dizem</h3>
@@ -239,27 +257,10 @@
           <strong>— Joana Ferreira, produtora rural</strong>
         </div>
         <div>
-          <p>"Excelentes profissionais.Comprei um agricula com eles chegou certinho."</p>
+          <p>"Excelentes profissionais. Comprei um agrícola com eles e chegou certinho."</p>
           <strong>— Ricardo Oliveira, iniciante em drones</strong>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Imagem Complementar -->
-  <section class="imagem-complementar" style="padding: 40px 0;">
-    <div class="container">
-      <img src="agri5.jpg" alt="Drone em operação" />
-    </div>
-  </section>
-
-  <!-- Informações Extras -->
-  <section class="info-extra">
-    <div class="container">
-      <h3>Atendimento completo para empresas e pessoas físicas</h3>
-      <p>
-        Atendemos tanto empresas quanto clientes individuais com soluções personalizadas. Fornecemos drones profissionais e agrícolas, oferecemos serviço de aluguel de drones para empresas, além de realizarmos coberturas com imagens aéreas em eventos como casamentos, aniversários e festas corporativas. Seja qual for sua necessidade, conte com a Hobby Drones para entregar qualidade e inovação em cada voo.
-      </p>
     </div>
   </section>
 
