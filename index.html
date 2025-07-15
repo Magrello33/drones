@@ -39,6 +39,28 @@
       display: block;
     }
 
+    .botao-curso {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .botao-curso a {
+      background-color: #4da6ff;
+      color: white;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: background 0.3s ease;
+      display: inline-block;
+    }
+
+    .botao-curso a:hover {
+      background-color: #3399ff;
+    }
+
     .info-extra {
       background-color: #fff;
       padding: 60px 20px;
@@ -79,7 +101,7 @@
       border-radius: 10px;
       margin-bottom: 18px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-      border-left: 6px solid #ff8c42;
+      border-left: 6px solid #4da6ff;
       transition: transform 0.3s ease;
     }
     .lista-servicos li:hover {
@@ -166,6 +188,7 @@
       text-align: center;
       font-size: 0.95rem;
     }
+
     .whatsapp-btn {
       position: fixed;
       bottom: 20px;
@@ -193,12 +216,16 @@
     </div>
   </header>
 
-  <!-- Banner de Topo -->
+  <!-- Banner de Topo + Botão do Curso -->
   <section class="banner-topo">
     <img src="Banner.png" alt="Banner de Drones" />
   </section>
 
-  <!-- Informações Extras (movida para cima) -->
+  <div class="botao-curso">
+    <a href="curso-drones.html">📚 FAÇA O CURSO PROFISSIONAL DE DRONES</a>
+  </div>
+
+  <!-- Informações Extras -->
   <section class="info-extra">
     <div class="container">
       <h3>Atendimento completo para empresas e pessoas físicas</h3>
@@ -222,6 +249,11 @@
         <li>Treinamento para pilotagem e segurança</li>
         <li>Assistência técnica para drones agrícolas</li>
         <li>Suporte em aplicações agrícolas e mapeamento aéreo</li>
+        <li>
+          <a href="curso-drones.html" style="text-decoration: none; color: inherit;">
+            Curso Profissional de Drones — <strong style="color: #0b0f29;">Clique aqui</strong>
+          </a>
+        </li>
       </ul>
     </div>
   </section>
@@ -243,7 +275,12 @@
     </div>
   </section>
 
-  <!-- Depoimentos (movido para o final) -->
+  <!-- Botão do Curso - Final da Página -->
+  <div class="botao-curso">
+    <a href="curso-drones.html">📚 FAÇA O CURSO PROFISSIONAL DE DRONES</a>
+  </div>
+
+  <!-- Depoimentos -->
   <section class="depoimentos">
     <div class="container">
       <h3>O que nossos clientes dizem</h3>
